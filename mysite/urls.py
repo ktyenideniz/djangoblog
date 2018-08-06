@@ -16,6 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+import sys
+sys.path.append(sys.path[0] + "/../..")
+
+from django.urls import path
+from . import settings
+from blog import views
 
 from django.contrib.staticfiles.urls import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
