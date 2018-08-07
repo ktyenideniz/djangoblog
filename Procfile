@@ -1,1 +1,1 @@
-web: gunicorn djangoblog.wsgi:application --log-file -
+web: gunicorn thawing-refuge-61838.wsgi:application --log-file -
